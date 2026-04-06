@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Nihonlingo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- CHERRY BLOSSOM GIF BACKGROUND -->
+    <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExbmJ3dHR1eHZ4MGt1endxczA1bXlzMDk4dHYyYXhib21hOW01a2pxcyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/AdtvZ8gu9gZ32/giphy.gif" class="background-gif" alt="Falling cherry blossom background">
+    <div class="overlay"></div>
+    <!-- eto header -->
+    <header>
+        <div class="header-container">
+            <div class="logo"> Nihonlingo </div>
+            <nav>
+                <a href="NihonLingo.html">Home</a>
+                <a href="dictionary.html">Dictionary</a>
+                <a href="dictionaryabout.html">About</a>
+                <a href="touristguide.html">Tourist Guide</a>
+            
+            </nav>
+        </div>
+    </header>
+    
+    <!-- eto hero section -->
+<!-- Hero Section -->
+<div class="hero">
+    <div class="hero-content">
+        <h1>Nihonlingo</h1>
+        <p>Your gateway to learning Japanese with ease and confidence.</p>
+        <div class="search-box">
+            <div class="search-container">
+                <input type="text" class="search-input" id="homeSearchInput" placeholder="Search for English or Japanese word...">
+                <button class="search-btn" onclick="searchFromHome()">Search</button>
+            </div>
+        </div>
+    </div>
+</div>    
+    <!-- eto maincontent -->
+    <div class="container">
+        <!-- Word of the Day Section -->
+        <section class="featured-section">
+            <h2 class="section-title">✨ Word of the Day</h2>
+            <div class="features">
+                <div class="feature-card">
+                    <h3>Thank you</h3>
+                    <div class="featured-japanese">ありがとう</div>
+                    <div class="featured-romaji">(Arigatou)</div>
+                    <p class="featured-desc">Pronunciation: ah-ree-gah-toh</p>
+                    <p class="featured-context">A common expression of gratitude used in everyday situations.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Good luck</h3>
+                    <div class="featured-japanese">頑張って</div>
+                    <div class="featured-romaji">(Ganbatte)</div>
+                    <p class="featured-desc">Pronunciation: gahn-bah-teh</p>
+                    <p class="featured-context">Used to encourage someone or show support before a challenge.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Wonderful</h3>
+                    <div class="featured-japanese">素晴らしい</div>
+                    <div class="featured-romaji">(Subarashii)</div>
+                    <p class="featured-desc">Pronunciation: soo-bah-rah-shee</p>
+                    <p class="featured-context">Expresses admiration or praise for something exceptional.</p>
+                </div>
+            </div>
+        </section>
+        
+    </div>
+ <!-- TOURIST GUIDE SNEAK PEEK -->
+    <section class="featured-section">
+        <h2 class="section-title">🗾 Tourist Guide Essentials</h2>
+        <p style="text-align: center; max-width: 800px; margin: 0 auto 40px; color: #666;">Useful Japanese phrases for your stay in Japan</p>
+        
+        <div class="tourist-preview">
+         <!-- Category 1 Preview -->
+<div class="preview-card">
+    <div class="preview-icon">🍜</div>
+    <h3>Ordering Food</h3>
+    <ul class="preview-list">
+        <li><span class="preview-en">Menu please</span> - <span class="preview-jp">メニューをお願いします</span></li>
+        <li><span class="preview-en">How much is this?</span> - <span class="preview-jp">これはいくらですか？</span></li>
+        <li><span class="preview-en">Recommendation?</span> - <span class="preview-jp">おすすめは何ですか？</span></li>
+    </ul>
+    <a href="touristguide.html#category1" class="preview-link">See all 10 phrases →</a>
+</div>
+
+<!-- Category 2 Preview -->
+<div class="preview-card">
+    <div class="preview-icon">🚆</div>
+    <h3>Transportation</h3>
+    <ul class="preview-list">
+        <li><span class="preview-en">Where is station?</span> - <span class="preview-jp">駅はどこですか？</span></li>
+        <li><span class="preview-en">How much?</span> - <span class="preview-jp">いくらですか？</span></li>
+        <li><span class="preview-en">Next bus?</span> - <span class="preview-jp">次のバスは何時ですか？</span></li>
+    </ul>
+    <a href="touristguide.html#category2" class="preview-link">See all 10 phrases →</a>
+</div>
+
+<!-- Category 3 Preview -->
+<div class="preview-card">
+    <div class="preview-icon">🏨</div>
+    <h3>Hotel & Accommodation</h3>
+    <ul class="preview-list">
+        <li><span class="preview-en">Check in please</span> - <span class="preview-jp">チェックインお願いします</span></li>
+        <li><span class="preview-en">WiFi password?</span> - <span class="preview-jp">WiFiのパスワードは？</span></li>
+        <li><span class="preview-en">Breakfast included?</span> - <span class="preview-jp">朝食は付いていますか？</span></li>
+    </ul>
+    <a href="touristguide.html#category3" class="preview-link">See all 10 phrases →</a>
+</div>
+
+<!-- Category 4 Preview -->
+<div class="preview-card">
+    <div class="preview-icon">🛍️</div>
+    <h3>Shopping</h3>
+    <ul class="preview-list">
+        <li><span class="preview-en">How much?</span> - <span class="preview-jp">いくらですか？</span></li>
+        <li><span class="preview-en">Tax free</span> - <span class="preview-jp">免税でお願いします</span></li>
+        <li><span class="preview-en">Can I try?</span> - <span class="preview-jp">試着できますか？</span></li>
+    </ul>
+    <a href="touristguide.html#category4" class="preview-link">See all 10 phrases →</a>
+</div>
+
+<!-- Category 5 Preview -->
+<div class="preview-card">
+    <div class="preview-icon">🚑</div>
+    <h3>Emergency & Health</h3>
+    <ul class="preview-list">
+        <li><span class="preview-en">Help!</span> - <span class="preview-jp">助けて！</span></li>
+        <li><span class="preview-en">Call police</span> - <span class="preview-jp">警察を呼んでください</span></li>
+        <li><span class="preview-en">I'm sick</span> - <span class="preview-jp">気分が悪いです</span></li>
+    </ul>
+    <a href="touristguide.html#category5" class="preview-link">See all 10 phrases →</a>
+</div>
+
+<!-- Category 6 Preview -->
+<div class="preview-card">
+    <div class="preview-icon">🗺️</div>
+    <h3>Asking Directions</h3>
+    <ul class="preview-list">
+        <li><span class="preview-en">Where is toilet?</span> - <span class="preview-jp">トイレはどこですか？</span></li>
+        <li><span class="preview-en">Straight</span> - <span class="preview-jp">まっすぐ行ってください</span></li>
+        <li><span class="preview-en">Turn left</span> - <span class="preview-jp">左に曲がって</span></li>
+    </ul>
+    <a href="touristguide.html#category6" class="preview-link">See all 10 phrases →</a>
+</div>
+        </div>
+
+        <div style="text-align: center; margin-top: 40px;">
+            <a href="touristguide.html" class="btn btn-primary" style="display: inline-block; padding: 15px 40px;">View Complete Tourist Guide →</a>
+        </div>
+    </section>
+
+    <!-- eto footer-->
+    <footer>
+        <div class="footer-content">
+            
+         
+        </div>
+    </footer>
+<script>
+function searchFromHome() {
+    const searchTerm = document.getElementById('homeSearchInput').value.trim();
+    if (searchTerm === "") {
+        alert("Please enter a word to search.");
+        return;
+    }
+    // Save search term para magamit sa dictionary page
+    localStorage.setItem('searchTerm', searchTerm);
+    window.location.href = "dictionary.html";
+}
+</script>
+
+</body>
+</html>
